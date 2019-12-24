@@ -1,0 +1,42 @@
+@width: 100px;
+@height: @width + 100px;
+
+#header {
+  width: @width;
+  height: @height;
+  background-color: red;
+  .bordered();
+}
+
+.bordered {
+  border-top: dotted 10px black;
+  border-bottom: solid 20px black;
+}
+
+/*.nesting {
+  background-color: red;
+}
+
+.nesting .novigation {
+  font-size: 30px;
+  color: green;
+}
+
+.nesting .logo {
+  width: 300px;
+  color: rgb(60, 0, 128);
+  font-size: 20px;
+} */
+
+.nesting {
+  background-color: red;
+  .navigation {
+    font-size: 30px;
+  color: green;
+  }
+  .logo {
+    width: 300px;
+  color: rgb(60, 0, 128);
+  font-size: 20px;
+  }
+}
